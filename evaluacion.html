@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Evaluación del Curso</h1>
+    <form id="quiz-form">
+        <div>
+            <p>1. ¿Qué es una derivada?</p>
+            <input type="radio" name="question1" value="1" id="q1o1"> <label for="q1o1">Pendiente de funcion</label><br>
+            <input type="radio" name="question1" value="0" id="q1o2"> <label for="q1o2">Suma de dos funciones</label>
+        </div>
+        <div>
+            <p>2. Derivada de "2x" :</p>
+            <input type="checkbox" name="question2" value="1" id="q2o1"> <label for="q2o1">2</label><br>
+            <input type="checkbox" name="question2" value="0" id="q2o2"> <label for="q2o2">0</label>
+        </div>
+        <div>
+            <p>3. ¿La derivada se puede expresar como limite?:</p>
+            <select name="question3" id="question3">
+                <option value="0">No</option>
+                <option value="1">Si</option>
+            </select>
+        </div>
+        <button type="submit">Enviar Respuestas</button>
+    </form>
+    <p id="score" style="font-size: 1.5em; color: green; margin-top: 20px;"></p>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

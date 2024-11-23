@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lambda Academy</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="login-section">
+        <h1>Ingreso al Curso</h1>
+        <form id="login-form">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" placeholder="Ingrese su usuario" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" placeholder="Ingrese su contraseña" required>
+            <button type="submit">Acceder</button>
+        </form>
+        <p id="login-error" style="color: red; display: none;">Usuario o contraseña incorrectos.</p>
+    </div>
+
+    <div id="course-section" style="display: none;">
+        <h1>Bienvenido al curso: Derivadas</h1>
+        <p>Aquí aprenderás sobre el tema <a href="https://cursodeinstalador.com/aprende-derivadas-desde-cero/" target="_blank">enlace de referencia</a>.</p>
+        <img src="recursos/derivadas.jpg" alt="Imagen del curso">
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/uK4-s0ojHFg" 
+            title="Video de YouTube"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+
+        <button id="start-evaluation">Realizar Evaluación</button>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
